@@ -11,6 +11,10 @@ def bgr_to_rgb(image):
     return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 
+# ----------------------------------------------------------------------------
+# ----------------------HAND DETECTOR CLASS ---------------------------------
+# ----------------------------------------------------------------------------
+
 class HandDetector:
     def __init__(self, static_image_mode=False, max_num_hands=2, min_detection_confidence=0.5,
                  min_tracking_confidence=0.5):
